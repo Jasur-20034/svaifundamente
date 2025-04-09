@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="description" content="Установка свай с обвязкой и бетонированием в Московской области. Надёжный фундамент от 999₽. Звоните: +7 968 902-24-00" />
+  <meta name="keywords" content="фундамент, сваи, установка свай, свайный фундамент, Московская область, сваи под ключ, винтовые сваи" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фундаменты Сваи</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
+    header { background: #5e5c3e; color: white; text-align: center; padding: 1rem; position: relative; }
+    header img.logo { width: 100px; position: absolute; top: 10px; left: 10px; }
+    .hero {
+      padding: 4rem 2rem;
+      background-image: url('photo_2025-04-08_21-30-39.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .price { color: #ffd700; font-size: 1.5rem; font-weight: bold; }
+    .button {
+      background: #ff6600;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    section { padding: 2rem; background: white; margin-bottom: 1rem; }
+    ul.features li { margin-bottom: 10px; }
+    footer {
+      background: #5e5c3e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="photo_2025-04-08_21-30-39.jpg" alt="Логотип" class="logo" />
+    <h1>Фундаменты Сваи</h1>
+    <p>Свай Агалофки — бетонированные под ключ</p>
+  </header>
+
+  <section class="hero">
+    <h2>Установка свай с обвязкой и бетонированием</h2>
+    <p>Чистая работа, надёжный фундамент</p>
+    <p class="price">От 999₽ за сваю</p>
+    <a href="#form"><button class="button">👉 Заказать</button></a>
+    <a href="tel:+79689022400"><button class="button">📞 Позвонить</button></a>
+  </section>
+
+  <section>
+    <h2>Винтовая свая 57 мм (СВС) 2500 мм</h2>
+    <ul>
+      <li>Покрытие: 1 слой</li>
+      <li>Наконечник: Сварной</li>
+      <li>Толщина стенки: 3 мм</li>
+      <li>Монтаж: Подключен</li>
+      <li>Оголовок: Подключен</li>
+    </ul>
+    <p class="price">999 ₽</p>
+  </section>
+
+  <section>
+    <h2>Почему выбирают нас</h2>
+    <ul class="features">
+      <li>✅ Всё под ключ: сами привозим инструменты и материалы</li>
+      <li>✅ От клиента — только участок и пожелания</li>
+      <li>✅ Работаем чётко, по уровню и срокам</li>
+      <li>✅ Гарантия на сваи и монтаж</li>
+    </ul>
+  </section>
+
+  
+<section>
+  <h2>Примеры выполненных работ</h2>
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Пример 1" />
+    <img src="photo2.jpg" alt="Пример 2" />
+    <img src="photo3.jpg" alt="Пример 3" />
+    <img src="photo4.jpg" alt="Пример 4" />
+    <img src="photo5.jpg" alt="Пример 5" />
+  </div>
+</section>
+
+
+  <section id="form">
+    <h2>Оставить заявку</h2>
+    <p><strong>Московская область</strong></p>
+    <p>Контактное лицо: Руслан</p>
+    <p>Телефон/Telegram: +7 968 902-24-00, +7 999 869-20-72</p>
+
+    <form id="orderForm">
+      <label>Выберите диаметр сваи:<br>
+        <select name="diameter" id="diameter">
+          <option value="57">57 мм</option>
+          <option value="76">76 мм</option>
+          <option value="89">89 мм</option>
+          <option value="108">108 мм</option>
+        </select>
+      </label><br><br>
+
+      <label>Выберите длину:<br>
+        <select name="length" id="length">
+          <option value="1500">1500 мм</option>
+          <option value="2000">2000 мм</option>
+          <option value="2500">2500 мм</option>
+        </select>
+      </label><br><br>
+
+      <label>Имя:<br><input type="text" id="name"></label><br><br>
+      <label>Телефон:<br><input type="text" id="phone"></label><br><br>
+      <label>Комментарий:<br><textarea id="comment"></textarea></label><br><br>
+
+      <button type="submit" class="button">Отправить заявку</button>
+    </form>
+
+    <script>
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const token = "8092065456:AAGzZj2YHYjIwFzP969XsWMigSuTHSinfn4";
+      const chatId = "6854182458";
+
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const comment = document.getElementById("comment").value;
+      const diameter = document.getElementById("diameter").value;
+      const length = document.getElementById("length").value;
+
+      const message = "📩 Новая заявка:\n👤 Имя: " + name +
+                      "\n📞 Телефон: " + phone +
+                      "\n📏 Свая: " + diameter + " мм × " + length + " мм" +
+                      "\n💬 Комментарий: " + comment;
+
+      const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=` + encodeURIComponent(message);
+
+      fetch(url).then(() => {
+        alert("✅ Заявка отправлена!");
+        document.getElementById("orderForm").reset();
+      }).catch(() => {
+        alert("❌ Ошибка при отправке.");
+      });
+    });
+    </script>
+  </section>
+
+  <footer>
+    <p>Фундаменты Сваи</p>
+    <p>«Прочные сваи — крепкий дом»</p>
+    <p>Московская область</p>
+    <p>Контактное лицо: Руслан</p>
+    <p>Контакты: +7 968 902-24-00, +7 999 869-20-72</p>
+  
+  <p><a href="https://t.me/agaloft_bot" target="_blank">
+    <button class="button">✏️ Изменить данные</button>
+  </a></p>
+
+</footer>
+</body>
+</html>
